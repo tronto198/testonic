@@ -1,5 +1,7 @@
 {
   "name": "testonic",
-  "integrations": {},
+  "integrations": {
+    "capacitor": {}
+  },
   "type": "angular"
 }
