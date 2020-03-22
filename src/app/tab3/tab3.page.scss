@@ -1,3 +1,22 @@
 ion-content ion-toolbar {
   --background: translucent;
 }
+
+.grid-full ion-col {
+    // flex: 0 0 50%;
+    max-width: 48%;
+}
+
+.test ion-col {
+  max-width: 48%;
+}
+
+ion-row ion-col {
+  border: medium solid black;
+}
+
+ion-img {
+  max-width: 80%;
+  // align-items: center;
+  margin: auto;
+}

@@ -7,16 +7,20 @@ import { Geolocation } from '@ionic-native/geolocation/ngx';
   styleUrls: ['tab12.page.scss']
 })
 export class Tab1Page {
-  
+  public location: string;
   constructor(private geolocation: Geolocation) {}
 
   getGeos(){
-    this.geolocation.getCurrentPosition().then((resp)=>{
-      let location: string;
-      location = "위도: " + resp.coords.latitude.toString() + " 경도: "
+    var options = {
+      enableHighAccuracy: true,
+      timeout: 5000,
+      maximumAge: 0
+    };
+
+    this.geolocation.getCurrentPosition(options).then((resp)=>{
+      this.location = "위도: " + resp.coords.latitude.toString() + "\n 경도: "
         + resp.coords.longitude.toString();
-      alert(location);
-      //alert(resp.coords.altitude.toString());
+        
     })
     .catch(e =>{
       alert(e);

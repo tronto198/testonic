@@ -4,5 +4,10 @@
   "bundledWebRuntime": false,
   "npmClient": "npm",
   "webDir": "www",
-  "cordova": {}
+  "cordova": {},
+  "windowsAndroidStudioPath": "C:\\Users\\HJ\\AppData\\Local\\JetBrains\\Toolbox\\apps\\AndroidStudio\\ch-0\\191.5900203\\bin\\studio64.exe",
+  "server": {
+    "url": "http://localhost:8100",
+    "cleartext": true
+  }
 }
